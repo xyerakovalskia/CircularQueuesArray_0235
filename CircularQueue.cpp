@@ -102,3 +102,11 @@ public:
         }
         else
         {
+            // jika FRONT > REAR, iterasi dari FRONT hingga akhir array
+            while (FRONT_Position <= max - 1)
+            {
+                cout << queue_array[FRONT_Position] << " ";
+                FRONT_Position++;
+            }
+
+            FRONT_Position = 0;
